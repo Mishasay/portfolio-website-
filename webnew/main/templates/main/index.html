@@ -1,0 +1,43 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}main page{% endblock %}
+
+{% block body_class %}home-page{% endblock %}
+
+{% block content %}
+<section class="back">
+
+    <div class="back-accent"></div>
+
+    <div class="back-text">
+
+        <p class="back-kicker">HI, I'm</p>
+
+        <h1 class="back-name">Mykhailo</h1>
+
+        <p class="back-role">Beginner Developer</p>
+
+        <p class="back-desk">
+            I'm a beginner developer passionate about programming, solving problems, and continuously improving my skills.
+        </p>
+
+        <div class="back-stack">
+            <span>Python</span>
+            <span>Django</span>
+            <span>C#</span>
+            <span>C++</span>
+        </div>
+
+        <div class="back-actions">
+            <a class="back-btn" href="about">
+            View My Work <span class="back-arrow">→</span>
+            </a>
+            <a class="back-btn back-btn_secondary" href="contact">
+                Contact Me
+            </a>
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

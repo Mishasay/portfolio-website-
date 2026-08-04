@@ -1,0 +1,276 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}about me{% endblock %}
+{% block body_class %}about-page{% endblock %}
+
+{% block content %}
+
+<section class="about-hero">
+    <div class="about-hero_inner">
+        <div class="about-hero_left">
+
+            <p class="about-tag">Get to know me</p>
+
+            <h1 class="about-title">About <span>Me</span></h1>
+
+            <p class="about-text">
+                Hi! I'm Mykhailo, a beginner developer focused on Python, С++ and C#.
+                I enjoy building clean web applications and improving my skills step by step.
+            </p>
+
+            <div class="about-stats">
+                <div class="about-stat">
+                    <div class="about-stat_icon">&lt;/&gt;</div>
+                    <div class="about-stat_label">Projects</div>
+                    <div class="about-stat_value">2+</div>
+                </div>
+
+                <div class="about-stat">
+                    <div class="about-stat_icon">◉</div>
+                    <div class="about-stat_label">Focus</div>
+                    <div class="about-stat_value">Backend</div>
+                </div>
+
+                <div class="about-stat">
+                    <div class="about-stat_icon">↗</div>
+                    <div class="about-stat_label">Started</div>
+                    <div class="about-stat_value">2025</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="about-info">
+    <div class="about-info_inner">
+
+        <div class="about-card">
+
+            <div class="about-card_grid">
+
+                <div class="about-personal">
+                    <h2 class="about-card_title">Quick Profile</h2>
+
+                    <ul class="about-personal_list">
+                        <li>
+                            <span class="about-personal_label">Name</span>
+                            <span class="about-personal_value">Mykhailo</span>
+                        </li>
+                        <li>
+                            <span class="about-personal_label">Age</span>
+                            <span class="about-personal_value">17</span>
+                        </li>
+                        <li>
+                            <span class="about-personal_label">Location</span>
+                            <span class="about-personal_value">Germany</span>
+                        </li>
+                        <li>
+                            <span class="about-personal_label">Language</span>
+                            <span class="about-personal_value">Ukrainian, Russian, German (B1/B2), English(B1)</span>
+                        </li>
+                        <li>
+                            <span class="about-personal_label">Focus</span>
+                            <span class="about-personal_value">Backend Development</span>
+                        </li>
+                        <li>
+                             <span class="about-personal_label">Main Stack</span>
+                            <span class="about-personal_value">Python, С++, C#</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="about-journey">
+                    <h2 class="about-card_title">My Journey</h2>
+
+                    <div class="about-timeline">
+                        <div class="about-timeline_item">
+                            <div class="about-timeline_year">2025</div>
+                            <p class="about-timeline_text">Started learning programming with Python and built a strong foundation in syntax, logic and problem solving.</p>
+                        </div>
+                        <div class="about-timeline_item">
+                            <div class="about-timeline_year">Django</div>
+                            <p class="about-timeline_text">Discovered web development and began creating my first websites with Django, HTML and CSS.</p>
+                        </div>
+                        <div class="about-timeline_item">
+                            <div class="about-timeline_year">Now</div>
+                            <p class="about-timeline_text">Improving my backend skills, learning C# and building personal portfolio projects.</p>
+                        </div>
+                        <div class="about-timeline_item">
+                            <div class="about-timeline_year">Next Goal</div>
+                            <p class="about-timeline_text">Become a junior developer and create useful, clean software.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="about-learning">
+                    <h2 class="about-card_title">Currently Learning</h2>
+
+                    <div class="learning-list">
+                        <div class="learning-item">
+                            <span>Django</span>
+                            <p>Views, templates, static files and project structure.</p>
+                        </div>
+
+                        <div class="learning-item">
+                            <span>Databases</span>
+                            <p>Models, data and backend logic.</p>
+                        </div>
+
+                        <div class="learning-item">
+                            <span>Frontend Basics</span>
+                            <p>HTML, CSS and responsive layouts.</p>
+                        </div>
+
+                        <div class="learning-item">
+                            <span>C#</span>
+                            <p>Object-oriented programming and application logic.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about-project">
+    <div class="about-project_inner">
+
+        <div class="project-header">
+            <h2 class="project-title">My works</h2>
+            <p class="project-text">
+                A small collection of projects I built while learning Python and C#.
+            </p>
+
+        </div>
+
+        <div class="project-grid">
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'main/img/back.png' %}" alt="Portfolio website preview">
+                </div>
+
+                <div class="project-content">
+                    <span class="project-status">Learning project</span>
+
+                    <h3 class="project-name">Portfolio Website</h3>
+
+                    <p class="project-description">
+                        My personal website built with Django, HTML and CSS.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Django</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                    <a class="project-link" href="https://github.com/Mishasay/portfolio-website-" target="_blank" rel="noopener noreferrer">
+                        View Project→
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'main/img/game-2.png' %}" alt="2D game preview">
+                </div>
+
+                <div class="project-content">
+                    <span class="project-status">Learning project</span>
+
+                    <h3 class="project-name">2D Game</h3>
+
+                    <p class="project-description">
+                        My first project: a game written in Python with limited functionality and graphics.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pygame</span>
+                    </div>
+
+                    <a class="project-link" href="https://github.com/Mishasay/python-2d-game-build" target="_blank" rel="noopener noreferrer">
+                        View Project→
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'main/img/comsoon.png' %}" alt="Coming soon project preview">
+                </div>
+
+                <div class="project-content">
+                    <span class="project-status">Coming soon</span>
+
+                    <h3 class="project-name">Next project</h3>
+
+                    <p class="project-description">
+                        This place is reserved for my next learning project.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>C#</span>
+                        <span>coming soon</span>
+                    </div>
+
+                    <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">
+                        View Project→
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="{% static 'main/img/comsoon.png' %}" alt="Coming soon project preview">
+                </div>
+
+                <div class="project-content">
+                    <span class="project-status">Coming soon</span>
+
+                    <h3 class="project-name">Next project</h3>
+
+                    <p class="project-description">
+                        This place is reserved for my next learning project.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>C#</span>
+                        <span>...</span>
+                    </div>
+
+                    <a class="project-link" href="#" target="_blank" rel="noopener noreferrer">
+                        View Project→
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
+

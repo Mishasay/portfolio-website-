@@ -1,0 +1,109 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title %}contacts{% endblock %}
+{% block body_class %}contacts-page{% endblock %}
+
+{% block content %}
+
+<section class="cont-hero">
+
+    <div class="cont-inner">
+        <p class="cont-tag">Get in touch</p>
+        <h1 class="cont-title">Contact Me</h1>
+        <p class="cont-text">
+            Have a question, idea or project? Send me a message and I’ll reply when I can.
+        </p>
+    </div>
+
+</section>
+
+<section class="cont-main">
+
+    <div class="cont-card">
+
+        <div class="cont-info">
+
+            <h2 class="cont-info_title">Let's connect</h2>
+
+            <p class="cont-info_text">
+                You can send me a message through the form or find me on my social platforms.
+            </p>
+
+            <div class="cont-socials">
+
+                <a class="cont-social" href="https://github.com/Mishasay" target="_blank" rel="noopener noreferrer">
+                    <img src="{% static 'main/img/git.jpg' %}" alt="">
+                    <span>GitHub</span>
+                </a>
+
+                <a class="cont-social" href="https://www.instagram.com/mish4ha/" target="_blank" rel="noopener noreferrer">
+                    <img src="{% static 'main/img/inst.jpg' %}" alt="">
+                    <span>Instagram</span>
+                </a>
+
+                <a class="cont-social" href="https://t.me/akus4yan" target="_blank" rel="noopener noreferrer">
+                    <img src="{% static 'main/img/tg.jpg' %}" alt="">
+                    <span>Telegram</span>
+                </a>
+
+                <a class="cont-social" href="https://mail.google.com/mail/?view=cm&fs=1&to=mykhailosharov@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img src="{% static 'main/img/email.jpg' %}" alt="">
+                    <span>Email</span>
+                </a>
+
+            </div>
+
+            <div class="cont-direct">
+                <p class="cont-direct_label">Direct email</p>
+                <a class="cont-direct_link" href="mailto:mykhailosharov@gmail.com">
+                    mykhailosharov@gmail.com
+                </a>
+            </div>
+
+        </div>
+
+        <form class="cont-form" method="post">
+            {% csrf_token %}
+
+            <div class="cont-form_header">
+                <h2 class="cont-form_title">Send a message</h2>
+                <p class="cont-form_text">
+                    Fill out the form and I’ll get back to you as soon as possible.
+                </p>
+            </div>
+
+            <div class="cont-field">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="cont-field">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="cont-field cont-field_full">
+                <label for="subject">Subject</label>
+                <input id="subject" type="text" name="subject" placeholder="Message subject">
+            </div>
+
+            <div class="cont-field cont-field_full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+            </div>
+
+            <div class="cont-send">
+                <button type="submit">Send Message</button>
+                <p class="cont-form_note">
+                    I usually reply as soon as I can.
+                </p>
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+{% endblock %}
