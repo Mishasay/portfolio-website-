@@ -23,9 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-f5t#mg=4ba(ma5fwfby-iq96ln1=8#_euexp2366mtd9vfm^eq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "portfolio-website-nzrc.onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Application definition
@@ -123,11 +127,6 @@ STATICFILES_DIRS = [
     BASE_DIR / "main" / "static",
 ]
 
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-
 import os
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
@@ -136,8 +135,8 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 CONTACT_EMAIL = "mykhailosharov@gmail.com"
