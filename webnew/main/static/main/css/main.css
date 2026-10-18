@@ -1,7 +1,7 @@
 .home-page {
     margin: 0;
 
-    background: url("/static/main/img/back-blue.png") center / cover no-repeat fixed;
+    background: url("/static/main/img/backneww.png") center / cover no-repeat fixed;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -203,7 +203,7 @@
     box-sizing: border-box;
     padding-top: 1vh;
 
-    background: url("/static/main/img/about-back.png") center / cover no-repeat;
+    background: url("/static/main/img/backab2.png") center / cover no-repeat;
     position: relative;
 }
 
