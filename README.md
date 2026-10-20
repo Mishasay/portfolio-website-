@@ -149,15 +149,15 @@ The `.env` file is excluded from Git using `.gitignore`.
 
 ### Home
 
-<img width="1917" height="952" alt="image" src="https://github.com/user-attachments/assets/cbcf530f-b8a0-491e-aebc-56dc3e3fd034" />
+<img width="1918" height="945" alt="image" src="https://github.com/user-attachments/assets/d2725cd7-d079-4386-8c6f-0fc22d58a7d5" />
 
 ### About
 
-<img width="1903" height="948" alt="image" src="https://github.com/user-attachments/assets/f9b90e94-efca-4a53-973e-7d40d57856d1" />
+<img width="1903" height="946" alt="image" src="https://github.com/user-attachments/assets/2a0bb72e-6b44-4669-af8e-8673a210ccdd" />
 
 ### Skills
 
-<img width="1904" height="948" alt="image" src="https://github.com/user-attachments/assets/7b736dc3-ae21-4dfd-a07c-aabce8f8944c" />
+<img width="1905" height="954" alt="image" src="https://github.com/user-attachments/assets/cf9a5082-7bce-4f5e-bfe1-c17824e0380f" />
 
 ### Contact
 
